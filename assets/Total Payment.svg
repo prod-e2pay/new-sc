@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="15" viewBox="0 0 72 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44525b;
+        font-size: 12px;
+        font-family: DIN2014-Regular, 'DIN 2014';
+      }
+    </style>
+  </defs>
+  <text id="Total_Payment" data-name="Total Payment" class="cls-1" transform="translate(36 11)"><tspan x="-35.628" y="0">Total Payment</tspan></text>
+</svg>

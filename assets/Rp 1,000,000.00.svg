@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="226" height="40" viewBox="0 0 226 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #27328f;
+        font-size: 32px;
+        font-family: DIN2014-Bold, 'DIN 2014';
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="Rp_1_000_000.00" data-name="Rp 1,000,000.00" class="cls-1" transform="translate(113 30)"><tspan x="-112.512" y="0">Rp 1,000,000.00</tspan></text>
+</svg>
