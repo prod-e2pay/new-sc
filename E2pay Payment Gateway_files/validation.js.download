@@ -1,0 +1,20 @@
+function validasi_check(id){
+    var payment = document.getElementsByName('payment'+id);
+    var i;
+    for (i = 0; i < payment.length; i++) {
+        if (payment[i].checked) {
+            document.getElementById("btn-process-"+id).disabled = false;
+        // txt = txt + payment[i].value + " ";
+        }
+    }
+}
+function validasi_check_mb(id){
+    var payment = document.getElementsByName('paymentmb'+id);
+    var i;
+    for (i = 0; i < payment.length; i++) {
+        if (payment[i].checked) {
+            document.getElementById("btn-process-mb-"+id).disabled = false;
+        // txt = txt + payment[i].value + " ";
+        }
+    }
+}

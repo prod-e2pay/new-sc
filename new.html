@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0061)https://paytest.e2pay.co.id/merchant-switching/singleCheckout -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./E2pay Payment Gateway_files/core.js.download" type="text/javascript"></script>
+    <script src="./E2pay Payment Gateway_files/tapestry-beanvalidator.js.download" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="./E2pay Payment Gateway_files/default.css">
+    <link type="text/css" rel="stylesheet" href="./E2pay Payment Gateway_files/tapestry-console.css">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>E2pay Payment Gateway</title>
+    <meta content="on" http-equiv="cleartype">
+    <meta content="320" name="MobileOptimized">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="E2pay Payment Gateway" name="description">
+    <meta content="E2pay Payment Gateway" name="keywords">
+    <meta content="E2pay Payment Gateway" name="author">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./E2pay Payment Gateway_files/style-v2.css" rel="stylesheet">
+    <title>E2pay Payment Gateway</title>
+</head>
+
+<body>
+    <form enctype="application/x-www-form-urlencoded" clientid="MainForm" name="MainForm"
+        onsubmit="javascript:return Tapestry.waitForPage(event);"
+        action="https://paytest.e2pay.co.id/merchant-switching/singlecheckout.mainform" method="post" id="MainForm">
+        <div class="" style="display: none;"><input
+                value="H4sIAAAAAAAAAFvzloG1XJxBNDgzLz0n1TkjNTk7v7TEKiMzJSU1r7iIwSG/KF0vsSAxOSNVrySxILW4pKjSVC85vyg1JzMJSOcW5Oel5pUU63mAdagEFOUnpxYXB5cm5WYWF2fm50W1KwhXSO9gY2Jg9GHgTs7PKynKz/FLzE0tYRDyyUosS9TPScxL1w8uKQK6wLqioISBDWJ5uSiDMJqrcvLzC4Bu0iPWTT5A9SpGnwrSNN3FVtszMTBUFFDLVOMDGi0exl/WMlDVVBNUt2LGC8jUeINChjqssYaQZccryznY9Bri9ZEhXpMN8ZpshNdkI7wmGxE2eVQvUXqN8caCMV6TjQmbTEAvAO8Y2QzkBAAA"
+                name="t:formdata" type="hidden"></div><input clientid="doPaymentChannel" id="doPaymentChannel"
+            name="hidden" type="hidden">
+        <div class="main">
+            <div class="box-kiri">
+                <div class="tiket-com">
+                    <div class="logo-tiket-com"><img alt="Logo" src="./E2pay Payment Gateway_files/EP_NMS"></div>
+                    <div class="global-tiket-network">EP_NMS</div>
+                    <div class="total-payment">Total Payment</div>
+                    <div>
+                        <p class="nominal">Rp 300.000,00</p>
+                    </div>
+                    <div>
+                        <p class="invoice">Invoice No. : BRN283851CF03114ACE8</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="flex-detail">
+                        <div class="teks-detail">Detail</div>
+                        <div class="items">1 Items</div>
+                    </div>
+                    <div class="sentosa-monorail-ticket">
+                        <div>Tes Barang</div>
+                        <div><span class="kuantiti">Qty</span> x1</div>
+                    </div>
+                    <div class="nominal">
+                        <p>Rp 300.000,00</p>
+                    </div>
+                    <div class="back-merchant">
+                        <div><a shape="rect" style="cursor: pointer;"
+                                onclick="changeValueBackToMerchant(&#39;BACKTOMERCHANT&#39;); clickBackMerchant();">BACK
+                                TO MERCHANT</a></div>
+                    </div>
+                    <div class="img-web-logo">
+                        <div><img alt="" src="./E2pay Payment Gateway_files/web_logo_E2Pay_S.png"></div>
+                        <div><img alt="" src="./E2pay Payment Gateway_files/web_logo_PG_L.png"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box-kanan">
+                <div class="sub-box first">
+                    <div class="title">
+                        Credit Card
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">CREDIT CARD</div>
+                        <div onclick="alert(&#39;Comming Soon !&#39;)" class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/g4158.svg"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Layer 2.svg"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        Direct Debit
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">BNC</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">OCTO CASH</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        Virtual Account
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">BCAVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">BNIVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">BRIVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">CIMBVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">MANDIRIVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">MAYBANK</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">PERMATAVA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        E-Money
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">DANA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">DOOET</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">GOPAY</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">LINKAJA WCO</div>
+                            <div onclick="changeValueByServerCode(&#39;LINKAJA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/LINKAJA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">MBAYAR AUTH</div>
+                            <div onclick="changeValueByServerCode(&#39;MBAYAR&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/MBAYAR"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">MBAYAR QR</div>
+                            <div onclick="changeValueByServerCode(&#39;MBAYAR&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/MBAYAR"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">NUCASH QR</div>
+                            <div onclick="changeValueByServerCode(&#39;NUCASH&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/NUCASH"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">OVO</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">REKPON</div>
+                            <div onclick="changeValueByServerCode(&#39;REKPON&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/REKPON"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        Instant Payment
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">BCA</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">MANDIRI</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">SBII</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                </div>
+                <div class="sub-box">
+                    <div class="title">
+                        Mobile Payment
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">LINKAJA APPLINK</div>
+                        <div onclick="changeValueByServerCode(&#39;APPLINK&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/APPLINK"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">OCTOMOBILE</div>
+                        <div onclick="changeValueByServerCode(&#39;GOMOBILE&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/GOMOBILE"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">SHOPEEPAY JUMPAPP</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                </div>
+                <div class="sub-box">
+                    <div class="title">
+                        Online Banking
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">DANAMON</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">MAYBANK2U</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">MUAMALAT</div>
+                        <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="box-title">OCTOCLICKS</div>
+                        <div onclick="changeValueByServerCode(&#39;NIAGA&#39;); doClicksBtn(); return false;"
+                            class="bank"><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                    style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                    src="./E2pay Payment Gateway_files/NIAGA"></a><a shape="rect"
+                                href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                    src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                    </div>
+                </div>
+                <div class="sub-box">
+                    <div class="title">
+                        Qris Payment
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">BTN QRIS</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">LINKAJA QRIS</div>
+                            <div onclick="changeValueByServerCode(&#39;LINKAJAQR&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/LINKAJAQR"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">OCTOMOBILE QRIS</div>
+                            <div onclick="changeValueByServerCode(&#39;GOMOBILE&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/GOMOBILE"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">SHOPEEPAY QRIS</div>
+                            <div onclick="changeValueByServerCode(&#39;SHOPEEPAY&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/SHOPEEPAY"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        Convenience Store
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">ALFAMART</div>
+                            <div onclick="changeValueByServerCode(&#39;INDOMARET&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/INDOMARET"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">INDOMARET</div>
+                            <div onclick="changeValueByServerCode(&#39;ALFAMART&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/ALFAMART"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-box">
+                    <div class="title">
+                        Installment Without CC
+                    </div>
+                    <div>
+                        <div class="box-content">
+                            <div class="box-title">INDODANA</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box-content last">
+                            <div class="box-title">KREDIVO</div>
+                            <div onclick="changeValueByServerCode(&#39;PERMATAVA&#39;); doClicksBtn(); return false;"
+                                class="bank"><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img
+                                        style="height: 50px; max-width: 100px;object-fit: contain;" alt=""
+                                        src="./E2pay Payment Gateway_files/PERMATAVA"></a><a shape="rect"
+                                    href="https://paytest.e2pay.co.id/merchant-switching/singleCheckout"><img alt=""
+                                        src="./E2pay Payment Gateway_files/Path 2923.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+    <script src="./E2pay Payment Gateway_files/jquery.min.js.download"></script>
+    <script src="./E2pay Payment Gateway_files/jquery.mask.min.js.download"></script>
+    <script src="./E2pay Payment Gateway_files/bootstrap.min.js.download"></script>
+    <script src="./E2pay Payment Gateway_files/select2.min.js.download"></script>
+    <script src="./E2pay Payment Gateway_files/validation.js.download"></script>
+    <script type="text/javascript">
+		< !--
+            (function ($) {
+                var $j = jQuery.noConflict();
+            })(jQuery);
+
+        function clickBackMerchant() {
+            backDialog = confirm('Back To Merchant Menu ?')
+            if (backDialog == true) {
+                doClicksBtn();
+            }
+            else return false;
+        }
+
+        function showHideMenu(buttonMenuId) {
+            document.getElementById("BT").style.display = "none";
+            document.getElementById("EB").style.display = "none";
+            document.getElementById("CC").style.display = "none";
+            document.getElementById("EW").style.display = "none";
+            document.getElementById("CS").style.display = "none";
+            document.getElementById("IW").style.display = "none";
+            document.getElementById(buttonMenuId).style.display = "block";
+
+            (function ($) {
+                if (buttonMenuId != 'CC') {
+                    $('.visamaster').removeClass('d-flex');
+                    $('.visamaster').addClass('d-none');
+
+                } else {
+                    $('.visamaster').removeClass('d-none');
+                    $('.visamaster').addClass('d-flex');
+                }
+                $('.payment_method').prop('checked', false);
+                $(".btn-payment").attr("disabled", true);
+            })(jQuery);
+        }
+
+        function showHideMbFoot(buttonMenuId) {
+            (function ($) {
+                if (buttonMenuId != 'CC') {
+                    $('.visamaster').removeClass('d-flex');
+                    $('.visamaster').addClass('d-none');
+
+                } else {
+                    $('.visamaster').removeClass('d-none');
+                    $('.visamaster').addClass('d-flex');
+                }
+                $('.payment_method').prop('checked', false);
+                $(".btn-payment").attr("disabled", true);
+            })(jQuery);
+        }
+
+        function showHideMbCc(buttonId) {
+            document.getElementById("mbsavecc").style.display = "none";
+            document.getElementById("mbnewcc").style.display = "none";
+            document.getElementById(buttonId).style.display = "block";
+        }
+
+        function showHideCc(buttonId) {
+            document.getElementById("savecc").style.display = "none";
+            document.getElementById("newcc").style.display = "none";
+            document.getElementById(buttonId).style.display = "block";
+        }
+
+        var next = 0;
+        function doSubmit() {
+            if (next == 0) {
+                next = 1;
+                document.MainForm.submit();
+            }
+            else if (next == 1) { alert("Transaksi sedang diproses. Mohon ditunggu.\nTransaction in progress. Please wait."); }
+            return 0;
+        }
+
+        function clickCC() {
+            alert('Coming Soon !!');
+        }
+
+        function changeValueBackToMerchant(o) {
+            document.getElementById("doPaymentChannel").value = o;
+        }
+
+        function changeValueByServerCode(param) {
+            document.getElementById("doPaymentChannel").value = param;
+        }
+
+        function doClicksBtn() {
+            document.MainForm.doPaymentChannel.value = document.getElementById("doPaymentChannel").value;
+            return doSubmit();
+        }
+
+        function formatState(state) {
+            if (!state.id) {
+                return state.text;
+            }
+            var str = state.element.value;
+            var res = str.charAt(0);
+            if (res == 4) {
+                var nameimg = "visa.png";
+            } else if (res == 5) {
+                var nameimg = "mastercard-logo-png-transparent@2x.png";
+            }
+
+            var baseUrl = "/merchant-switching/images";
+            console.log(window.location);
+            var $state = $(
+                '<span><img src="' + baseUrl + '/' + nameimg + '" class="img-flag" /> ' + state.text + '</span>'
+            );
+            return $state;
+        };
+
+        function credit_card_check(evt) {
+            var str = evt.value;
+            var res = str.charAt(0);
+            var el = document.getElementById('img-icon-card');
+
+            if (res == 4) {
+                el.innerHTML = "";
+                el.innerHTML = "<img src=\"/merchant-switching/images/visa.png\">";
+            } else if (res == 5) {
+                el.innerHTML = "";
+                el.innerHTML = "<img src=\"/merchant-switching/images/mastercard-logo-png-transparent@2x.png\">";
+            } else {
+                el.innerHTML = "";
+            }
+        }
+        (function ($) {
+            $(document).ready(function () {
+                $("#btnSavecc").click(function () {
+                    $("#btnSavecc").addClass("active");
+                    $("#btnNewcc").removeClass("active");
+                })
+
+                $("#btnNewcc").click(function () {
+                    $("#btnNewcc").addClass("active");
+                    $("#btnSavecc").removeClass("active");
+                })
+
+                $("#btnMbSavecc").click(function () {
+                    $("#btnMbSavecc").addClass("active");
+                    $("#btnMbNewcc").removeClass("active");
+                })
+
+                $("#btnMbNewcc").click(function () {
+                    $("#btnMbNewcc").addClass("active");
+                    $("#btnMbSavecc").removeClass("active");
+                })
+
+                $('.credit_card').mask('0000 0000 0000 0000');
+
+                $('.chosen').select2({
+                    minimumResultsForSearch: -1
+                });
+                $('b[role="presentation"]').hide();
+                $('.select2-selection__arrow').append('<img src="/merchant-switching/images/down-arrow.png" class="caret"/>');
+                $('.select2_cc').select2(
+                    {
+                        templateResult: formatState,
+                        formatSelection: formatState,
+                    }
+                );
+            });
+        })(jQuery);
+		//-->
+    </script>
+    <script type="text/javascript">Tapestry.onDOMLoaded(function () {
+            Tapestry.init({ "formEventManager": [{ "formId": "MainForm", "validate": { "submit": true, "blur": true } }] });
+        });
+    </script>
+</body>
+
+</html>

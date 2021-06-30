@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'DIN2014-Regular';
+    src: url('fonts/DIN2014-Regular.woff2') format('woff2'), url('fonts/DIN2014-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN2014-Bold';
+    src: url('fonts/DIN2014-Bold.woff2') format('woff2'), url('fonts/DIN2014-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    
+    background-color: #adabbd;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 52px;
+    margin-bottom: 80.9px;
+
+
+}
+
+.box-kiri {
+    width: 396px;
+    padding: 48px 38px;
+    background-color:  #f8f8fa;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+    border-right: none;
+}
+
+.nominal, .teks-detail, .back-merchant, .title {
+    font-family: "DIN2014-Bold";
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .box-kiri {
+        padding-bottom: 50px;
+       border-radius: 10px;
+       border-bottom-left-radius: 0px;
+       border-bottom-right-radius: 0px;
+        /* width: 100%; */
+    }
+
+    .box-kanan {
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px !important;
+    }
+
+    .box-kanan .sub-box {
+        justify-content: start;
+        display: block;
+    }
+    }
+
+.tiket-com {
+    text-align: center;
+}
+
+.tiket-com .logo-tiket-com img {
+    width: 190px;
+    height: 52px;
+}
+
+.total-payment {
+    margin-top: 32px;
+}
+
+.tiket-com .nominal {
+    font-size: 32px;
+    font-weight: bold;
+    color: #27328f;
+    margin-top: 8px;
+}
+
+.tiket-com .invoice {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #a5a3a8;
+    font-family: "DIN2014-Regular";
+}
+
+.tiket-com .total-payment{
+    font-size: 12px;
+    color: #44525b;
+    font-family: "DIN2014-Regular";
+}
+
+.tiket-com .global-tiket-network {
+    font-size: 16px;
+    font-family: "DIN2014-Regular";
+    color: #44525b;
+}
+
+
+.flex-detail {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 42px;
+}
+
+.flex-detail .teks-detail {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #27328f;
+}
+
+.flex-detail .items {
+    color: #27328f;
+    font-family: "DIN2014-Regular";
+    font-size: 16px;
+}
+
+
+.sentosa-monorail-ticket {
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "DIN2014-Regular";
+}
+
+.detail .nominal {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b4e50;
+    padding-top: 8px;
+
+}
+
+.detail .kuantiti {
+    font-size: 16px;
+    font-style: italic;
+    color: #adabbd;
+    padding-right: 6px;
+    font-style: italic;
+}
+
+.detail .back-merchant {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #8f3f9b;
+    text-decoration: underline;
+
+    margin-top: 24px;
+}
+
+.img-web-logo {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 104.8px;
+}
+
+
+
+.box-kanan {
+    width: 396px;
+    padding: 38px 40px 16.1px 36px;
+    background-color: #ffffff;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+
+    border-left: none;
+}
+
+.box-kanan .box-content {
+    /* width: 320px; */
+    height: 60px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #d0cfde solid;
+}
+
+.bank {
+    display: flex;
+    margin-right: 14.3px;
+}
+
+.bank a {
+    align-self: center;
+}
+
+.bank img {
+    padding-left: 15px;
+}
+
+.box-kanan .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+.box-kanan .sub-box{
+    padding-top: 32px;
+    justify-content: center;
+    display: block;
+    /* width: 320px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid black; */
+}
+
+.box-kanan .sub-box.first {
+    padding-top: 0;
+}
+
+.box-content .box-title {
+    font-size: 14px;
+    color: #4b4e50;
+
+    
+    font-family: "DIN2014-Regular";
+    font-size: 14px;
+    font-style: normal;
+}
+
+.sub-box:last-of-type .box-content.last {
+    margin-bottom: 34.9px;
+}
